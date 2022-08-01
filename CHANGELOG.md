@@ -1,3 +1,10 @@
+# [0.10.0](https://github.com/IBM/vpc-java-sdk/compare/0.9.0...0.10.0) (2022-08-01)
+
+
+### Features
+
+* **2022-07-13:** updated the sdk as per the api spec released on 2022-07-13 for backup and vpn servers ([#40](https://github.com/IBM/vpc-java-sdk/issues/40)) ([88939c6](https://github.com/IBM/vpc-java-sdk/commit/88939c63e5b0d92ea5025579721cfbb186232425))
+
 # [0.9.0](https://github.com/IBM/vpc-java-sdk/compare/0.8.1...0.9.0) (2022-05-05)
 
 
