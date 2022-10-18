@@ -39,7 +39,7 @@ jobs:
       script:
         - build/setMavenVersion.sh
         #- mvn verify -fae -DskipITs $MVN_ARGS
-        - mvn nondex:nondex -DnondexRunsWithoutShuffling=1
+        - mvn nondex:help
       after_success:
         - echo "Build is successful"
 
