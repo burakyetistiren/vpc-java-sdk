@@ -38,8 +38,8 @@ jobs:
       install: true
       script:
         - build/setMavenVersion.sh
-        - mvn nondex:nondex -DnondexRunsWithoutShuffling=1
         - mvn verify -fae -DskipITs $MVN_ARGS
+        - mvn nondex:nondex -DnondexRunsWithoutShuffling=1
       after_success:
         - echo "Build is successful"
 
