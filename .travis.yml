@@ -69,7 +69,7 @@ jobs:
         - echo "Javadocs successfully published to gh-pages!"
     - jdk: openjdk8
       script:
-        - mvn nondex:nondex
+        - mvn nondex:nondex -DnondexRunsWithoutShuffling=1
     - jdk: openjdk8
       name: Publish-To-Maven-Central
       install: true
