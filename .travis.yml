@@ -38,6 +38,7 @@ jobs:
       install: true
       script:
         - build/setMavenVersion.sh
+        - mvn nondex:nondex -DnondexRunsWithoutShuffling=1
         - mvn verify -fae -DskipITs $MVN_ARGS
       after_success:
         - echo "Build is successful"
@@ -67,9 +68,6 @@ jobs:
         - build/publishJavadoc.sh
       after_success:
         - echo "Javadocs successfully published to gh-pages!"
-    - jdk: openjdk8
-      script:
-        - mvn nondex:nondex -DnondexRunsWithoutShuffling=1
     - jdk: openjdk8
       name: Publish-To-Maven-Central
       install: true
