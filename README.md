@@ -9,7 +9,7 @@
 Java client library to interact with various [IBM Cloud VPC offerings](https://cloud.ibm.com/apidocs/vpc?code=java?).
 
 This SDK uses [Semantic Versioning](https://semver.org), and as such there may be backward-incompatible changes for any new `0.y.z` version.
-
+ 
 ## Table of Contents
 
 <!--
