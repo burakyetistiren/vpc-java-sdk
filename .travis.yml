@@ -38,7 +38,7 @@ jobs:
       install: true
       script:
         - build/setMavenVersion.sh
-        - mvn verify -fae -DskipITs $MVN_ARGS
+        #- mvn verify -fae -DskipITs $MVN_ARGS
         - mvn nondex:nondex -DnondexRunsWithoutShuffling=1
       after_success:
         - echo "Build is successful"
