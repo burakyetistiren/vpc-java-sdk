@@ -36,5 +36,6 @@ jobs:
         - build/setMavenVersion.sh
         #- mvn verify -fae -DskipITs $MVN_ARGS
         - mvn nondex:nondex
+        - mvn test -fae -DskipITs $MVN_ARGS
       after_success:
         - echo "Build is successful"
