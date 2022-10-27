@@ -33,9 +33,9 @@ jobs:
       jdk: openjdk8
       install: true
       script:
-        - build/setMavenVersion.sh
+        #- build/setMavenVersion.sh
         #- mvn verify -fae -DskipITs $MVN_ARGS
-        - mvn nondex:debug
+        - mvn nondex:nondex
         #- mvn test -fae -DskipITs $MVN_ARGS
       after_success:
         - echo "Build is successful"
