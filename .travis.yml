@@ -35,6 +35,7 @@ jobs:
       script:
         #- build/setMavenVersion.sh
         #- mvn verify -fae -DskipITs $MVN_ARGS 
+        - mvn install
         - mvn nondex:nondex
         #- mvn test -fae -DskipITs $MVN_ARGS
       after_success:
